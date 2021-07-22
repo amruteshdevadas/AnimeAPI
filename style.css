@@ -1,0 +1,138 @@
+.outer_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin:10px 50px;
+    
+}
+body{
+    background: rgb(138, 187, 233);
+font-family:'Times New Roman', Times, serif;
+}
+
+
+h2,h3{
+    text-transform: capitalize;
+    text-align: center;
+    font-size:1.6rem ;
+}
+h2{
+    font-size: 1.8rem;
+}
+.container{
+    background-color: burlywood;
+    border-radius: 8px;
+    text-align: center;
+    padding:10px 0 10px 0;
+    box-shadow: 10px 10px 8px #888888;
+}
+.container:hover
+{
+    transform: scale(1.1); 
+}
+.title{
+    font-size:1.1rem;
+    font-weight: bold;
+    margin:3px 0,3px,0;
+}
+.date{
+    font-size: 0.9rem
+}
+.image{
+    border-radius: 10px;
+    /* height: 60%;
+    width:60%; */
+}
+#search{
+  
+    width: 40%;
+    height: 40px;
+    margin:10px 25px 10px 50px;
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
+/* .search_cont{
+    display:grid;
+    grid-template-columns:repeat(3,1fr) ;
+    
+} */
+
+#search:hover{
+    transform: scale(1.1);
+}
+
+.button{
+    width:max-content;
+    margin: 0;
+    height:40px ;
+    font-size: larger;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(149,131,215,1) 100%); 
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+    margin-right: 20px;
+}
+.button:hover{
+    transform: scale(1.1);
+
+}
+h2,.text{
+    text-align: center;
+    margin-bottom: 0;
+}
+.text{
+    margin-bottom:10px;
+}
+
+
+@media (max-width:1000px) {
+
+    .outer_container
+    { 
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 30px;
+    
+    }
+  
+}
+@media (max-width:800px) {
+
+    .outer_container
+    { 
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    }
+    .search_cont
+    {
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        margin: 10px 25px;
+        
+    } 
+    #search
+    {
+        width: 80%;
+        height: 40px;
+        margin:10px auto;
+        font-size: 18px;
+    }
+    .button{
+        /* margin:10px 15px 10px 15px; */
+        margin: 0 auto;
+    }
+   
+}
+@media (max-width:550px) {
+
+    .outer_container
+    { 
+    grid-template-columns: 1fr;
+    margin:10px 35px;
+    }
+  .container{
+      /* width: 100%; */
+  }
+}
